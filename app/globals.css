@@ -3,25 +3,49 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+* {
+  border-color: rgb(39 39 42);
+}
+
+::selection {
+  background: rgba(167, 139, 250, 0.3);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(39 39 42);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(63 63 70);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .font-mono-num {
+    font-variant-numeric: tabular-nums;
+    font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
   }
 }
