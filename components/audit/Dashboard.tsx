@@ -60,7 +60,7 @@ export default function Dashboard({ data, isReal, brand }: Props) {
       case "models":
         return <ModelsTab data={data} />
       case "citations":
-        return <CitationsTab data={data} isReal={isReal} />
+        return <CitationsTab data={data} />
       case "improve":
         return <ImproveTab data={data} />
     }
