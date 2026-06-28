@@ -105,7 +105,7 @@ function VisibilityCard({
                 fontSize: 12,
               }}
               labelStyle={{ color: "#a1a1aa" }}
-              formatter={(v: number) => [`${v.toFixed(1)}%`, "Visibility"]}
+              formatter={(v) => [`${Number(v).toFixed(1)}%`, "Visibility"]}
             />
             <Area
               type="monotone"
