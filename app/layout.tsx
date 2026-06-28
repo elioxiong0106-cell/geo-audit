@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "GEO Audit · AI 搜索可见度审计",
+  title: "GEO AI搜索可见性分析",
   description:
-    "量化品牌在豆包、千问、DeepSeek 中的可见度。灵感来源于 Profound 的 Answer Engine Insights 模块，聚焦中国 AI 搜索生态。",
+    "量化品牌在豆包、千问、DeepSeek、Kimi 等国产 AI 中的可见度、引用源与行业表现。",
 }
 
 export default function RootLayout({
