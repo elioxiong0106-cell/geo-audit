@@ -28,4 +28,4 @@ jobs:
       - name: Deploy to CloudBase Static Hosting
         run: |
           tcb login --apiKeyId ${{ secrets.TCB_SECRET_ID }} --apiKey ${{ secrets.TCB_SECRET_KEY }}
-          tcb hosting deploy ./out / -e ${{ secrets.TCB_ENV_ID }} --force
+          tcb hosting deploy ./out / -e ${{ secrets.TCB_ENV_ID }}
